@@ -1,1 +1,0 @@
-java -jar InstagramBot-1.0-SNAPSHOT
