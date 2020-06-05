@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="03866119-ad9f-4e6c-8883-2c6f7458f494" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.5.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.5.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.5.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.5.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.5.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/InstagramBot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_1_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_25_0_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_14_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_8_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_exec_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_checkerframework_checker_compat_qual_2_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_api_3_141_59.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_chrome_driver_3_141_59.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_edge_driver_3_141_59.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_firefox_driver_3_141_59.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_ie_driver_3_141_59.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_java_3_141_59.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_opera_driver_3_141_59.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_remote_driver_3_141_59.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_safari_driver_3_141_59.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_support_3_141_59.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/InstagramBot.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/InstagramBot.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/com.private.InstagramBot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/InstagramApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/bot/InstagramBot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/config/WebDriverConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/controller/ViewController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT.tar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/bin/InstagramBot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/bin/InstagramBot.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/InstagramBot-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/animal-sniffer-annotations-1.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/byte-buddy-1.8.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/checker-compat-qual-2.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/commons-exec-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/error_prone_annotations-2.1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/guava-25.0-jre.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/j2objc-annotations-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/jsr305-1.3.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/okhttp-3.11.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/okio-1.14.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/selenium-api-3.141.59.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/selenium-chrome-driver-3.141.59.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/selenium-edge-driver-3.141.59.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/selenium-firefox-driver-3.141.59.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/selenium-ie-driver-3.141.59.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/selenium-java-3.141.59.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/selenium-opera-driver-3.141.59.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/selenium-remote-driver-3.141.59.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/selenium-safari-driver-3.141.59.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/distributions/InstagramBot-1.0-SNAPSHOT/lib/selenium-support-3.141.59.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/InstagramBot-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/run.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/fxml/AppView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scripts/InstagramBot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scripts/InstagramBot.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/InstagramApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bot/InstagramBot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/WebDriverConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/AppView.fxml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="InstagramBot" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="InstagramBot" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="InstagramBot" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1XqrYlpSxy0gdJrXW7ujxOpMEUs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/driver" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\JavaProjects\InstagramBot\src\main\resources\driver" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="InstagramApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="InstagramApp" />
+      <module name="InstagramBot.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.InstagramApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03866119-ad9f-4e6c-8883-2c6f7458f494" name="Default Changelist" comment="" />
+      <created>1581774050116</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581774050116</updated>
+      <workItem from="1581784523413" duration="18000" />
+      <workItem from="1581784840327" duration="17000" />
+      <workItem from="1581784869178" duration="2703000" />
+      <workItem from="1582041075607" duration="3767000" />
+      <workItem from="1582139805889" duration="34000" />
+      <workItem from="1582576257640" duration="92000" />
+      <workItem from="1591199014760" duration="1926000" />
+      <workItem from="1591213159155" duration="988000" />
+      <workItem from="1591281652439" duration="9269000" />
+      <workItem from="1591374564233" duration="7007000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="794" height="271" key="GridCell.Tab.0.bottom" timestamp="1582046375993">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="794" height="271" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1582046375993" />
+    <state width="794" height="271" key="GridCell.Tab.0.center" timestamp="1582046375993">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="794" height="271" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1582046375993" />
+    <state width="794" height="271" key="GridCell.Tab.0.left" timestamp="1582046375993">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="794" height="271" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1582046375993" />
+    <state width="794" height="271" key="GridCell.Tab.0.right" timestamp="1582046375993">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="794" height="271" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1582046375993" />
+    <state x="536" y="330" key="com.intellij.ide.util.TipDialog" timestamp="1582139828212">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="536" y="330" key="com.intellij.ide.util.TipDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1582139828212" />
+  </component>
+</project>
