@@ -108,6 +108,7 @@ public class InstagramBot {
             }
             nextButton.click();
             howManyForward++;
+            pause(1000);
         }
     }
 
