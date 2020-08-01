@@ -8,55 +8,22 @@ import static java.lang.Thread.sleep;
 
 public class InstagramBot {
     public boolean isCancelled = false;
-    public final static String LOGINBUTTON = "/html/body/div[1]/section/main/div/article/div/div[1]/div/form/div[4]/button";
-    public final static String ALLOWBUTTON = "/html/body/div[4]/div/div/div/div[3]/button[2]";
-    public final static String NIE_TERAZ_BUTTON = "/html/body/div[1]/section/main/div/div/div/div/button";
-    public final static String HEARTBUTTON = "//span[contains(@class, 'fr66n')]/button[contains(@class, 'wpO6b ')]/div/*[local-name()='svg' and @class='_8-yf5 ' and @fill='#262626']";
-    public final static String FIRST_PICTURE = "/html/body/div[1]/section/main/article/div[1]/div/div/div[1]/div[1]/a/div[1]/div[2]";
-    public final static String NEXT_BUTTON = "/html/body/div[4]/div[1]/div/div/a";
-    public final static String AFTER_FIRST_BUTTON = "/html/body/div[4]/div[1]/div/div/a[2]";
+    private final static String LOGINBUTTON = "/html/body/div[1]/section/main/div/article/div/div[1]/div/form/div[4]/button";
+    private final static String ALLOWBUTTON = "/html/body/div[4]/div/div/div/div[3]/button[2]";
+    private final static String NIE_TERAZ_BUTTON = "/html/body/div[1]/section/main/div/div/div/div/button";
+    private final static String HEARTBUTTON = "//span[contains(@class, 'fr66n')]/button[contains(@class, 'wpO6b ')]/div/span/*[local-name()='svg' and @class='_8-yf5 ' and @fill='#262626']";
+    private final static String HEARTBUTTON_FILLED = "//span[contains(@class, 'fr66n')]/button[contains(@class, 'wpO6b ')]/div/span/*[local-name()='svg' and @class='_8-yf5 ' and @fill='#ed4956']";
+    private final static String FIRST_PICTURE = "/html/body/div[1]/section/main/article/div[1]/div/div/div[1]/div[1]/a/div[1]/div[2]";
+    private final static String NEXT_BUTTON = "/html/body/div[4]/div[1]/div/div/a";
+    private final static String AFTER_FIRST_BUTTON = "/html/body/div[4]/div[1]/div/div/a[2]";
 
 
     public void startBot(WebDriver webDriver, int howMany, String username, String userPassword, int max, int min) {
-        JavascriptExecutor js = (JavascriptExecutor) webDriver;
-        webDriver.get("https://www.instagram.com/accounts/login/?source=auth_switcher");
-
-        this.pause(1000);
-        WebElement webElement = webDriver.findElement(By.name("username"));
-        webElement.sendKeys(username);
-        this.pause(1000);
-
-        WebElement password = webDriver.findElement(By.name("password"));
-        password.sendKeys(userPassword);
-        this.pause(0);
-
-        WebElement button1 = webDriver.findElement(By.xpath(LOGINBUTTON));
-        button1.click();
-
-        this.pause(3000);
-        try {
-            WebElement button3 = webDriver.findElement(By.xpath(NIE_TERAZ_BUTTON));
-            button3.click();
-        } catch (NullPointerException e){
-            System.out.println(" element NIE_TERAZ_BUTTON not found ");
-            return;
-        }
-        this.pause(3000);
-        try {
-        WebElement button2 = webDriver.findElement(By.xpath(ALLOWBUTTON));
-        button2.click();
-        } catch (NullPointerException e){
-            System.out.println(" element ALLOWBUTTON not found ");
-            return;
-        }
+        JavascriptExecutor js = executeScript(webDriver);
+        login(webDriver,username,userPassword);
 
         int n = 0;
         while (n != howMany && isCancelled) {
-            try {
-                sleep(getRandom(max, min));
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
 
             boolean isExists = true;
             try {
@@ -65,49 +32,35 @@ public class InstagramBot {
                 isExists = false;
             }
 
+            boolean isAlreadyLiked = false;
+            try {
+                webDriver.findElement(By.xpath(HEARTBUTTON_FILLED));
+                isAlreadyLiked = true;
+            } catch (NoSuchElementException e) {
+            }
+
             WebElement element;
             if (isExists) {
+                this.pause(getRandom(max, min));
                 element = webDriver.findElement(By.xpath(HEARTBUTTON));
                 js.executeScript("arguments[0].scrollIntoView(false);", element);
                 element.click();
                 n++;
                 System.out.println("Post Liked, sum = " + n);
-            } else {
+            } else if (isAlreadyLiked){
+                this.pause(2000);
                 System.out.println("Post already Liked, scrolling down ");
                 js.executeScript("javascript:window.scrollBy(0,800)");
+            } else {
+                System.out.println("Can not find element in the DOM");
             }
         }
     }
 
     public void startBotByHashTag(WebDriver webDriver, int howMany, String username, String userPassword, int max, int min, String hashtag) {
-        JavascriptExecutor js = (JavascriptExecutor) webDriver;
-        webDriver.get("https://www.instagram.com/accounts/login/?source=auth_switcher");
+        JavascriptExecutor js = executeScript(webDriver);
+        login(webDriver,username,userPassword);
 
-        this.pause(1000);
-        WebElement webElement = webDriver.findElement(By.name("username"));
-        webElement.sendKeys(username);
-        this.pause(1000);
-        WebElement password = webDriver.findElement(By.name("password"));
-        password.sendKeys(userPassword);
-        this.pause(0);
-        WebElement button1 = webDriver.findElement(By.xpath(LOGINBUTTON));
-        button1.click();
-        this.pause(3000);
-        try {
-            WebElement button3 = webDriver.findElement(By.xpath(NIE_TERAZ_BUTTON));
-            button3.click();
-        } catch (NullPointerException e){
-            System.out.println(" element NIE_TERAZ_BUTTON not found ");
-            return;
-        }
-        this.pause(3000);
-        try {
-            WebElement button2 = webDriver.findElement(By.xpath(ALLOWBUTTON));
-            button2.click();
-        } catch (NullPointerException e){
-            System.out.println(" element ALLOWBUTTON not found ");
-            return;
-        }
         this.pause(1000);
         webDriver.get("https://www.instagram.com/explore/tags/" + hashtag + "/");
         this.pause(2000);
@@ -118,11 +71,6 @@ public class InstagramBot {
         int howManyLiked = 0;
         int howManyForward = 0;
         while (howManyLiked != howMany && isCancelled) {
-            try {
-                sleep(getRandom(max, min));
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
 
             boolean isExists = true;
             try {
@@ -131,14 +79,24 @@ public class InstagramBot {
                 isExists = false;
             }
 
+            boolean isAlreadyLiked = false;
+            try {
+                webDriver.findElement(By.xpath(HEARTBUTTON_FILLED));
+                isAlreadyLiked = true;
+            } catch (NoSuchElementException e) {
+            }
+
             WebElement element;
             if (isExists) {
+                this.pause(getRandom(max, min));
                 element = webDriver.findElement(By.xpath(HEARTBUTTON));
                 element.click();
                 howManyLiked++;
                 System.out.println("Post Liked, sum = " + howManyLiked);
-            } else {
+            } else if(isAlreadyLiked)  {
                 System.out.println("Post already Liked, scrolling down ");
+            } else {
+                System.out.println("Can not find element in the DOM");
             }
             pause(2000);
 
@@ -153,6 +111,34 @@ public class InstagramBot {
         }
     }
 
+    private JavascriptExecutor executeScript(WebDriver webDriver){
+        return (JavascriptExecutor) webDriver;
+    }
+
+    private void login(WebDriver webDriver,String username,String userPassword) {
+        JavascriptExecutor js = (JavascriptExecutor) webDriver;
+        webDriver.get("https://www.instagram.com/accounts/login/?source=auth_switcher");
+
+        this.pause(1000);
+        webDriver.findElement(By.name("username")).sendKeys(username);
+        this.pause(1000);
+        webDriver.findElement(By.name("password")).sendKeys(userPassword);
+        webDriver.findElement(By.xpath(LOGINBUTTON)).click();
+        this.pause(3000);
+        try {
+            webDriver.findElement(By.xpath(NIE_TERAZ_BUTTON)).click();
+        } catch (NullPointerException e){
+            System.out.println(" element NIE_TERAZ_BUTTON not found ");
+        }
+        this.pause(3000);
+        try {
+            WebElement button2 = webDriver.findElement(By.xpath(ALLOWBUTTON));
+            button2.click();
+        } catch (NullPointerException e){
+            System.out.println(" element ALLOWBUTTON not found ");
+        }
+    }
+
     private void pause(int time) {
         try {
             sleep(time);
@@ -164,7 +150,7 @@ public class InstagramBot {
     private int getRandom(int max, int min) {
         Random rn = new Random();
         int random = rn.nextInt((max - min) + 1) + min;
-        System.out.println(random);
+        System.out.println(random + " seconds to next like");
         return random * 1000;
     }
 }
