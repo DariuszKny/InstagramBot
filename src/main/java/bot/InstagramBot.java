@@ -8,7 +8,7 @@ import static java.lang.Thread.sleep;
 
 public class InstagramBot {
     public boolean isCancelled = false;
-    private final static String LOGINBUTTON = "/html/body/div[1]/section/main/div/article/div/div[1]/div/form/div[4]/button";
+    private final static String LOGINBUTTON = "/html/body/div[1]/section/main/div/article/div/div[1]/div/form/div/div[3]/button";
     private final static String ALLOWBUTTON = "/html/body/div[4]/div/div/div/div[3]/button[2]";
     private final static String NIE_TERAZ_BUTTON = "/html/body/div[1]/section/main/div/div/div/div/button";
     private final static String HEARTBUTTON = "//span[contains(@class, 'fr66n')]/button[contains(@class, 'wpO6b ')]/div/span/*[local-name()='svg' and @class='_8-yf5 ' and @fill='#262626']";
@@ -16,6 +16,7 @@ public class InstagramBot {
     private final static String FIRST_PICTURE = "/html/body/div[1]/section/main/article/div[1]/div/div/div[1]/div[1]/a/div[1]/div[2]";
     private final static String NEXT_BUTTON = "/html/body/div[4]/div[1]/div/div/a";
     private final static String AFTER_FIRST_BUTTON = "/html/body/div[4]/div[1]/div/div/a[2]";
+    private final static String COOKIES_ALLOW = "/html/body/div[2]/div/div/div/div[2]/button[1]";
 
 
     public void startBot(WebDriver webDriver, int howMany, String username, String userPassword, int max, int min) {
@@ -121,6 +122,7 @@ public class InstagramBot {
         webDriver.get("https://www.instagram.com/accounts/login/?source=auth_switcher");
 
         this.pause(1000);
+        webDriver.findElement(By.xpath(COOKIES_ALLOW)).click();
         webDriver.findElement(By.name("username")).sendKeys(username);
         this.pause(1000);
         webDriver.findElement(By.name("password")).sendKeys(userPassword);
