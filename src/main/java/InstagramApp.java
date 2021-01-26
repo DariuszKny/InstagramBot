@@ -24,11 +24,13 @@ public class InstagramApp extends Application {
             Parent root = loader.load();
             ViewController controller = loader.getController();
             scene = new Scene(root);
+            primaryStage.setTitle("Instragam BOT");
+            primaryStage.setScene(scene);
+            primaryStage.show();
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            System.out.println("End of application");
         }
-        primaryStage.setTitle("Instragam BOT");
-        primaryStage.setScene(scene);
-        primaryStage.show();
     }
 }

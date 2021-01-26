@@ -5,6 +5,7 @@ import config.WebDriverConfig;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import org.openqa.selenium.WebDriver;
 
@@ -18,7 +19,7 @@ public class ViewController implements Initializable {
     private TextField loginField;
 
     @FXML
-    private TextField passwordField;
+    private PasswordField passwordField;
 
     @FXML
     private TextField likesField;
@@ -51,7 +52,7 @@ public class ViewController implements Initializable {
     }
 
 
-    private void mainPageTask() {
+    private void mainPageTask(){
         hideStartButtons();
         System.out.println("Process Started");
         instagramBot.isCancelled = true;
